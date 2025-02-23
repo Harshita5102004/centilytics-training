@@ -1,0 +1,61 @@
+*{
+    background-color: rgb(140, 184, 169);
+  }
+  marquee{
+    color: brown;
+    font-size: 50px;
+  }
+  p{
+  text-align: center;  
+  color: blue;
+  border: 20px;
+  font-family: verdana;
+ 
+  border-style: solid;
+  border-color: blueviolet;
+  border-width: 1px;
+
+  }
+  .navbar {
+
+padding: 10px 0;
+text-align: center;
+
+}
+ 
+
+/* Menu Styling */
+.Menu {
+list-style: none;
+display: flex;
+justify-content: center;
+
+
+}
+
+.Menu li {
+display: inline;
+color: black;
+}
+
+.Menu a {
+text-decoration: none;
+color: white;
+font-size: 18px;
+padding: 10px 15px;
+transition: 0.3s;
+color: black;
+}
+
+
+  .second{
+   
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 100px;
+    margin-left: 100px;
+    font-size: larger;
+    
+}
+
+
