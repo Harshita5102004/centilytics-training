@@ -1,0 +1,141 @@
+<!--We learn about the position in css-->
+<!--The position property specifies the type of positioning method used for an element
+
+There are five different position values
+1.static
+2.relative
+3.fixed
+4.absolute
+5.sticky-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+<style>
+    *{
+        align-items: center;
+        justify-content: space-around;
+        background-color: rgb(94, 128, 116);
+    }
+
+    .static{
+        position: static;
+        border: 2px solid;
+        border-color: brown;
+        font-size: x-large;
+        background-color: rgb(81, 81, 119);
+    }
+    .relative{
+        position: relative;
+        padding: 0%;
+        bottom: 30%;
+        top: 50%;
+        left: 30%;
+        font-size: x-large;
+        border: 2px solid;
+        border-color: rgb(78, 65, 65);
+        background-color: rgb(96, 124, 124);
+
+    }
+    .fixed{
+        position: fixed;
+        border: 2px solid;
+        border-color: rgb(78, 65, 65);
+        font-size: x-large;
+        background-color: rgb(105, 88, 121);
+        margin: auto;
+       
+
+    }
+    div.absolute{
+        position: relative;
+        width: 400px;
+        height: 200px;
+        border: 2px solid;
+        border-color: brown;
+        font-size: x-large;
+        background-color: rgb(81, 81, 119);
+        padding: auto;
+        margin-top: 20%;
+    }
+    div.absolute2{
+        position: absolute;
+        
+        width: 400px;
+        height: 100px;
+        
+        font-size: x-large;
+        background-color: rgb(73, 148, 43);
+        justify-content: space-around;
+    }
+    .sticky{
+        position: sticky;
+        border: 3px;
+        border-color: brown;
+        background-color: rgb(104, 104, 110);
+        font-size: xx-large;
+
+    }
+    
+    
+
+</style>
+
+
+</head>
+<body>
+
+    <div class="static"> So, here the Concept of static position and this div in static position</div><br>
+
+    <div class="relative">An element with position: relative; is positioned relative to its normal position:</div>
+    <br>
+    
+    <div class="fixed">An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled:</div>
+
+
+    <div class="absolute">
+        This div element has position: relative
+        <div class="absolute2">
+            This div element has position:absolute
+
+        </div>
+    </div>
+
+
+    <div class="sticky"> An element with position: sticky; is positioned based on the user's scroll position.</div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="static"> So, here the Concept of static position and this div in static position</div><br>
+
+    <div class="relative">An element with position: relative; is positioned relative to its normal position:</div>
+    <br>
+    
+    <div class="fixed">An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled:</div>
+
+
+    <div class="absolute">
+        This div element has position: relative
+        <div class="absolute2">
+            This div element has position:absolute
+
+        </div>
+    </div>
+
+
+    <div class="sticky"> An element with position: sticky; is positioned based on the user's scroll position.</div>
+    
+</body>
+</html>
