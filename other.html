@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+
+        *{
+            /*Gradients allow smooth transitions between colors*/
+            background: linear-gradient(to right, rgb(138, 88, 88), rgb(84, 84, 139));
+            font-family: 'Roboto', sans-serif;
+        }
+
+            div {
+        width: 200px;
+        height: 100px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        background-color: rgb(77, 119, 155);
+      }
+
+
+      /*CSS animations allow elements to change their style gradually*/
+      @keyframes slide {
+      from {
+      transform: translateX(0);
+         }
+      to {
+        transform: translateX(100px);
+        }
+                    }
+
+            div {
+              animation: slide 2s infinite;
+            }
+
+    </style>
+</head>
+<body>
+    <center>
+    <h1> Some Important Properties of css</h1>
+</center>
+    <!--create a div -->
+    <div> In this div we use box-shadow Property</div>
+
+    
+</body>
+</html>
