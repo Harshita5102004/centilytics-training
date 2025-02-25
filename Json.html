@@ -1,0 +1,61 @@
+<!-- Here we understand the concept of JSON in javascript..
+JSON stands for JavaScript Object Notation.
+JSON is a text format for storing and transporting data
+JSON is "self-describing" and easy to understand.
+JSON work on key value pair-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+          <center style="background-color: rgb(119, 104, 133);">
+          <h1 style="color: blue;" > In this all about JSON</h1>
+          </center>
+
+       
+            <h2>JSON stands for JavaScript Object Notation.</h2>
+            <h2>JSON is a text format for storing and transporting data</h2>
+            <h2>JSON is "self-describing" and easy to understand.</h2>
+            <h2>JSON work on key value pair.</h2>
+            <h2>it is language independent</h2>
+
+        
+    
+
+
+
+
+
+<!-- Use internal javascript -->
+<script>
+
+// this is  json object
+const jsonS = '{"name":"Mohit", "age":30 ,"result" : true }';
+
+//below line(parse) convert json into javascript object 
+const obj = JSON.parse(jsonS);
+
+//printoutput obj 
+console.log(obj);
+
+
+
+console.log("below is json string ");
+
+// Now we convert js object into json 
+
+let obj1 = {name: "Mohit", age: 30};// js object
+let jsonsS= JSON.stringify(obj1); // convert js object into json object
+
+console.log(jsonsS);
+</script>
+
+
+</body>
+</html>
