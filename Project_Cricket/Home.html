@@ -1,322 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ECB-homepage</title>
-    <style>
-     *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-         
-      }
-    html,body{
-        height: 100%;
-        width: 100%;
-          }
-    body{
-            height: 100%;
-            margin: 0;
-            
-       }
-    .Navbar{
-           background-color: #005699;
-            margin-right: 90%; 
-            margin-bottom: 100%;
-            height: 100vh;
-            position: fixed;
-            color: aliceblue;
-            justify-content: space-between;
-           
-           }
-    .nav{
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            padding: 2vh 2vh;
-            
-        }
-     .nav img{
-            width: 2vh;
-       }
-    .logo-image img{
-            
-            height: 100%;
-            width: 100%;
-            height: 80px;
-    }
-       
-    .li{
-            justify-content: space-between;
-     }
-    .login{
-            margin-top: 5%;
-           position: relative;
-           margin-left: 30%;
-           size: 30px;
-           background-color:red;
-           width: 60px;  
-           height: 30px;
-           color: white;
-           
-        }
-    .main{
-            background-color:  #003E6C ;
-            display: flex;
-            margin-left: 10%;
-            color: white;
-            height: 80px;
-            padding: 0 10vh;
-            justify-content: space-around;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ECB-homepage</title>
 
-           
-          
-        }
-    
+  <!-- <link rel="stylesheet" href="homepage.css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
+  <link rel="stylesheet" href="style.css">
 
-        
-
-        
-
-        /*main heading*/
-        .main2{
-            margin-left: 10%;
-            background-image: url("https://jayant061.github.io/ecb-homepage/images/Englad_Test_Match_Image.png");
-             height: 100%;
-           
-           
-        }
-
-        .View_Match{
-            background-color: red;
-            color: white;
-            width: max-content;
-            border-radius: 7px;
-            height: 40px;
-          margin-right: 1%;
-          margin-top: 2%;
-         
-         
-       
-        }
-        .View_Match img{
-           
-        width:15px;
-            
-        }
-
-        .main3 h1{
-           color: white;  
-           padding-top: 12%;   
-           padding-left: 5%;       
-           
-        }
-        .date {
-            font-size: 0.75rem;
-    font-weight: 400;
-    color: #419bc8;
-    padding-left: 5%;
-    padding-top: 1%;
-    
-        }
-        .Watch-video{
-            background-color: red;
-            color: white;
-            width: max-content;
-            border-radius: 7px;
-            height: 40px;
-            margin-top: 5%;
-            margin-left: 5%;
-       
-        }
-        .Watch-video img{
-            width:15px;
-        }
-         .cards {
-    width: 99%;
-    display: grid
-;
-    grid-template-columns: 45% 26% 26%;
-    justify-content: flex-start;
-    align-items: flex-start;
-    height: 40%;
-    margin: 2% 0;
-    gap: 1%;
-    overflow: hidden;
-}
-
-
-    </style>
 
 </head>
+
 <body>
 
-    
 
-    <!--Navbar section-->
-   <div class="Navbar">
+
+  <!--Navbar section-->
+  <div class="Navbar">
     <div class="logo-image">
-        <img src="https://jayant061.github.io/ecb-homepage/images/England_Cricket_Board_logo.png" alt="">
+      <img src="https://jayant061.github.io/ecb-homepage/images/England_Cricket_Board_logo.png" alt="">
     </div>
-        <button class="login">LOGIN</button>
-        
-    
-            
+    <div class="Login-in">
+    <button class="login">LOGIN</button>
+    </div>
 
 
-            <div class="nav">
-                 <img src="https://jayant061.github.io/ecb-homepage/images/cricket-ball.png" width="20%" height="20%">
-                <p>MATCHES</p>
-            </div>
-
-             <div class="nav"> 
-                <img src="https://jayant061.github.io/ecb-homepage/images/England_cricket_team_logo.png "width="20%" height="20%">
-                <p>ENGLAND </p>
-            </div>
-
-                <div class="nav">
-                <img src="https://jayant061.github.io/ecb-homepage/images/cricket-hat.png" width="20%" height="20%"> 
-                <p> DOMESTIC </p>
-            </div>
-
-                <div class="nav">
-                <img src="https://jayant061.github.io/ecb-homepage/images/wicket-with-bat.png" width="20%" height="20%"> 
-                <p> PLAY</p>
-            </div>
 
 
-                <div class="nav">
-                <img src="https://jayant061.github.io/ecb-homepage/images/group-people.png" width="20%" height="20%">
-                <p>  BE INVOLVED </p>
-              </div> 
-              <div class="nav" style="padding-left: 40%;">
-                    
-                <p>VIDEO</p>
-            </div>
-                <div class="nav" style="padding-left: 40%;">
-                    
-                        <p>ABOUT</p>
-                </div>
+    <div class="nav">
+      <img src="https://jayant061.github.io/ecb-homepage/images/cricket-ball.png" width="20%" height="20%">
+      <p>MATCHES</p>
+    </div>
 
-            <div class="nav" style="padding-left: 40%;"> 
-                            <p>EDI</p>
-                </div>
-                    </div>
-        
-    </div> 
-   
-    <!--heading-->
+    <div class="nav">
+      <img src="https://jayant061.github.io/ecb-homepage/images/England_cricket_team_logo.png " width="20%"
+        height="20%">
+      <p>ENGLAND </p>
+    </div>
 
-    
-<div class="main"> 
-  
+    <div class="nav">
+      <img src="https://jayant061.github.io/ecb-homepage/images/cricket-hat.png" width="20%" height="20%">
+      <p> DOMESTIC </p>
+    </div>
+
+    <div class="nav">
+      <img src="https://jayant061.github.io/ecb-homepage/images/wicket-with-bat.png" width="20%" height="20%">
+      <p> PLAY</p>
+    </div>
+
+
+    <div class="nav">
+      <img src="https://jayant061.github.io/ecb-homepage/images/group-people.png" width="20%" height="20%">
+      <p> BE INVOLVED </p>
+    </div>
+    <div class="nav" style="padding-left: 40%;">
+
+      <p>VIDEO</p>
+    </div>
+    <div class="nav" style="padding-left: 40%;">
+
+      <p>ABOUT</p>
+    </div>
+
+    <div class="nav" style="padding-left: 40%;">
+      <p>EDI</p>
+    </div>
+  </div>
+
+  </div>
+
+  <!--heading-->
+
+
+  <div class="main">
+
     <div class="head1">
-    <p>1st Test, Day 5, New Zealand v England 2023</p>
-     <p>England win by 267 runs</p>
+      <p>1st Test, Day 5, New Zealand v England 2023</p>
+      <p>England win by 267 runs</p>
 
     </div>
-    <hr>
-     <div class="head2" style="align-items: center;">
-     <p>New Zealand 306 & 126 14/20</p>
-
-       <p>England Men 325/9 & 374 15/20</p> 
+    <div class="line">
+  
     </div>
-    <hr>
     
-    <button class="View_Match"> VIEW MATCH<img src=" https://jayant061.github.io/ecb-homepage/images/right-arrow.png "></button>
-   
+    <div class="head2" >
+      <p>New Zealand 306 & 126 14/20</p>
+      <p>England Men 325/9 & 374 15/20</p>
+    </div>
+   <div class="line">
+  
+   </div>
     
+   <div class="view-match">
+    <button class="View_Match"><p>VIEW MATCH</p> 
+      <img
+        src=" https://jayant061.github.io/ecb-homepage/images/right-arrow.png "></button>
+      </div>
+  </div>
+
  
-</div>
-
-<div class="main2">
-   <div class="main3">
-   <h1> <bold>HIGHLIGHTS | BRUTAL BATTING <br>AND DISCIPLINED BOWLING HELPS<br>
-        ENGLAND TO RECORD-BREAKING<br> WIN</bold>
-       
-    </h1>
-     <div class="date">
-        <span>22 February 2023</span>
-      </div>
-    
-
-    
-          
- <button class="Watch-video">watch video
-    <img src="https://jayant061.github.io/ecb-homepage/images/right-arrow.png " alt="img" >
-     </button>
-    </div>
- </div> 
 
 
+ <!--main background-->
 
- <div class="container">
-  <img src="	https://jayant061.github.io/ecb-homepage/images/card-1.png
-  " class="overlay">
-</div>
+ <div class="main2">
 
+  <div class="main3">
+    <div class="Highlights">
+    <p>
+      <a
+      href="https://www.ecb.co.uk/video/3077569/highlights-brutal-batting-and-disciplined-bowling-helps-england-to-record-breaking-win"
+    >
+      <bold>HIGHLIGHTS | BRUTAL BATTING <br>AND DISCIPLINED BOWLING HELPS<br>
+        ENGLAND TO RECORD-BREAKING<br> WIN</bold></a>
 
-
-
-
-
-
-
-
-
-
-
-<div class="cards">
-  <a href="#" class="card" id="card-1">
-    <img class="mobileimg" src="./images/card-1.png" alt="">
-    <div class="card-el">
-      <div class="time-duration">
-        <img src="./images/play-transparent.png" alt="">
-        <span>07:08</span>
-      </div>
-      <p>
-        Highlights | Brutal batting and disciplined bowling helps
-        England to record-breaking win
       </p>
-      <div class="date">
-        <span>22 February 2023</span>
+
+    </div>
+
+    <div class="date">
+      <span>22 February 2023</span>
+    </div>
+
+
+
+
+
+
+      <!--watch vedio-->
+  
+ 
+      
+      <div class="Watch_video">
+      <button class="Watch-video">WATCH VIDEO
+        <img src="https://jayant061.github.io/ecb-homepage/images/right-arrow.png " alt="img">
+      </button>
       </div>
     </div>
-  </a>
 
-  <a href="#" class="card" id="card-2">
-    <img class="mobileimg" src="./images/card-2.png" alt="">
-    <div class="card-el">
-      <p>Vitality Blast 2023 tickets are on sale now!</p>
-      <span>Get your tickets to this year's Vitality Blast and cheer
-        your team on to Finals Day!</span>
-      <div class="date">
-        <span>22 February 2023</span>
-      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="cards">
+      <a class="card" id="card-1">
+        <img class="mobileimg" src="https://jayant061.github.io/ecb-homepage/images/card-1.png" alt="">
+        <div class="card-el">
+            <div class="time-duration">
+            <img src="https://jayant061.github.io/ecb-homepage/images/play-transparent.png" alt="">
+            <span class="A">07:08</span>
+          </div> 
+
+          <p >
+            Highlights | Brutal batting and disciplined bowling helps
+            England to record-breaking win
+          </p>
+          <div class="date">
+            <span >22 February 2023</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="card" id="card-2">
+        <img class="mobileimg" src="https://jayant061.github.io/ecb-homepage/images/card-2.png" alt="">
+         <div class="card-el">
+          <p >Vitality Blast 2023 tickets are on sale now!</p>
+          <span  class="get">Get your tickets to this year's Vitality Blast and cheer your team on to Finals Day!</span> 
+          <div class="date">
+            <span >22 February 2023</span>
+          </div>
+        </div>
+      </a>
+      <a  class="card"  id="card-3">
+        <img class="mobileimg" src="https://jayant061.github.io/ecb-homepage/images/card-3.png" alt="">
+        <div class="card-el">
+            <div class="time-duration">
+            <img src="https://jayant061.github.io/ecb-homepage/images/play-transparent.png" alt="">
+            <span >07:08</span>
+          </div>  
+          <p >Crossy's Coffee Club | Episode 4 | Nat Sciver-Brunt</p>
+          <div class="date">
+            <span >22 February 2023</span>
+          </div>
+        </div>
+      </a>
     </div>
-  </a>
-  <a href="#" class="card" id="card-3">
-    <img class="mobileimg" src="./images/card-3.png" alt="">
-    <div class="card-el">
-      <div class="time-duration">
-        <img src="./images/play-transparent.png" alt="">
-        <span>07:08</span>
-      </div>
-      <p>Crossy's Coffee Club | Episode 4 | Nat Sciver-Brunt</p>
-      <div class="date">
-        <span>22 February 2023</span>
-      </div>
-    </div>
-  </a>
-</div>
 
 
 
 
 
-</div>
-</di>
+ 
+
+
+
+
+  </div>
+
 
 </body>
+
 </html>
