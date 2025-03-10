@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter App</title>
+    <style>
+        *{   
+            background-color: rgb(202, 185, 188);
+            text-align: center;
+        }
+        h2{
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #zero {
+            /* background-color: aqua;
+            text-align: center;*/
+            font-size: 50px; 
+            margin: 20px; 
+            font-size: 50px;
+           
+            
+        }
+
+        button { 
+            background-color: rgb(243, 243, 243);
+            font-size: 20px; 
+            padding: 10px; 
+            margin: 5px; 
+            cursor: pointer; }
+    </style>
+
+
+</head>
+<body>
+    <h2> COUNTER APP </h2>
+   <div id="zero"><P > 0</P></div> 
+    <button onclick="increase()">➕ Increase</button>
+    <button onclick="reset()">🔄 Reset</button>
+    <button onclick="decrease()">➖ Decrease</button>
+
+    <script>
+           let count = 0;
+           let counterDisplay = document.getElementById("zero");
+
+           function increase(){
+            count++;
+            counterDisplay.innerText = count;
+        
+            
+           }
+           function decrease(){
+            count--;
+            counterDisplay.innerText = count;
+        }
+           
+           function reset(){
+            count=0;
+            counterDisplay.innerText = count;
+        }
+
+    </script>
+    
+</body>
+</html>
