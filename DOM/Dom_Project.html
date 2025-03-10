@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+
+
+    <!-- Use internal css-->
+    <style>
+
+        *{
+            background-color: rgb(151, 113, 113);
+            justify-items:  center;
+           margin-top: 80px;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        #clock{
+            height: 200%;
+            font-size: 50px;
+             color: white;
+            background: rgb(0, 0, 0);
+            border-radius: 8px;
+            display: inline-block;
+            border: 30px;
+            border-color: red;
+        }
+    </style>
+
+
+</head>
+<body>
+
+    <h1>Digital Clock</h1>
+    <div id="clock"></div>
+     
+
+
+    <!-- use internal javascript -->
+    <script>
+
+       
+        function updateClock() {          // create  function and function name updateclock
+            let now = new Date();         //  now variable  Gets the current date & time
+            let timeString = now.toLocaleTimeString();                           //here convert the time in readable formate 
+            document.getElementById("clock").innerText = timeString;            // get html object by id and Updates the text content of the selected element.
+        }
+
+        setInterval(updateClock, 1000);         //Calls updateClock() every second
+        updateClock(); // Initial call to prevent delay
+    </script>
+
+</body>
+</html>
