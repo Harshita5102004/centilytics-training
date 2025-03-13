@@ -14,3 +14,10 @@ console.log(head);
 function changeText() {
     document.getElementById("heading").innerHTML = "DOM Manipulated!";
 }
+
+
+function call(){
+    console.log("hello");
+}
+
+call();

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+      body {
+        background-color: rgb(164, 179, 192);
+      }
+      .main {
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+       }
+      
+    </style>
+</head>
+<body>
+    <script>
+        function data(event) {
+            let A = document.getElementById("a").value;
+            let B = document.getElementById("b").value;
+            let C = document.getElementById("c").value;
+            let D = document.getElementById("d").value;
+
+            if (A == "" || B == "" || C == "" || D == "") {
+                alert("All fields are mandatory!");
+                event.preventDefault();
+                return false;
+            }
+
+            if (isNaN(B)) {
+                alert("Please enter a valid number! Only numbers are allowed.");
+                event.preventDefault();
+                return false;
+            }
+
+            if (B.length != 10) {
+                alert("Please enter a valid number! Number should be 10 digits.");
+                event.preventDefault();
+                return false;
+            }
+
+            if (C !== D) {
+                alert("Passwords do not match!");
+                event.preventDefault();
+                return false;
+            }
+        }
+    </script>
+
+    <center>
+        <div class="main">
+            <form onsubmit="return data(event)" action="submit.html">
+                UserName: <input type="text" id="a"><br><br><br>
+                Contact: <input type="text" id="b"><br><br><br>
+                Password: <input type="password" id="c"><br><br><br>
+                Confirm Password: <input type="password" id="d"><br><br><br>
+                <input type="submit">
+            </form>
+        </div>
+    </center>
+</body>
+</html>
