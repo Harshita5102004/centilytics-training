@@ -2,57 +2,57 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Clock</title>
+    
+    <title>Responsive Digital Clock</title>
 
-
-    <!-- Use internal css-->
     <style>
-
-        *{
-            background-color: rgb(170, 56, 56);
-            justify-items:  center;
-           margin-top: 50px;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
             font-family: Arial, Helvetica, sans-serif;
-            font-size:50px;
-
         }
-
-        #clock{
-          
-            font-size: 50px;
-             color: white;
-            background: rgb(0, 0, 0);
-            border-radius: 8px;
+        body {
+            /* display: flex; */
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgb(170, 56, 56);
+            text-align: center;
+        }
+        .container {
+            text-align: center;
+        }
+        h1 {
+            color: white;
+            font-size: 5vw;
+            margin-bottom: 20px;
+        }
+        #clock {
+            font-size: 6vw;
+            color: white;
+            background: black;
+            padding: 20px;
+            border-radius: 10px;
             display: inline-block;
-            border: 30px;
-            border-color: red;
+            border: 5px solid red;
         }
     </style>
-
-
 </head>
 <body>
-     <hr>
-    <h1>Digital Clock</h1>
-    <hr>
-    <div id="clock"></div>
-     
-
-
-    <!-- use internal javascript -->
+    <div class="container">
+        <h1>Digital Clock</h1>
+        <div id="clock"></div>
+    </div>
+    
     <script>
-
-       
-        function updateClock() {          // create  function and function name updateclock
-            let now = new Date();         //  now variable  Gets the current date & time
-            let timeString = now.toLocaleTimeString();                           //here convert the time in readable formate 
-            document.getElementById("clock").innerText = timeString;            // get html object by id and Updates the text content of the selected element.
+        function updateClock() {
+            let now = new Date();
+            let timeString = now.toLocaleTimeString();
+            document.getElementById("clock").innerText = timeString;
         }
-
-        setInterval(updateClock, 1000);         //Calls updateClock() every second
-        updateClock(); // Initial call to prevent delay
+        setInterval(updateClock, 1000);
+        updateClock();
     </script>
-
 </body>
 </html>
