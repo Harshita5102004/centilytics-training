@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .header{
+      width: 100%;
+      height: 100%;
+     position: relative;
+    
+   
+    }
+    .log{
+      width: 100%;
+     height: 100px;
+     background-color: rgb(161, 48, 48);
+       display: flex;
+      align-items: center;
+      justify-content:space-between;
+      
+      
+    }
+    .log h2{
+      margin-left: 1rem;
+    }
+    .logo2{
+      display: flex;
+      gap: 2vw;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .menu{
+      display: none;
+      padding-right: 1rem;
+      background-color: aqua;
+      position: relative;;
+    }
+    .hower{
+      display: none;
+      height: 100px;
+    }
+
+    
+    .menu:hover .hower {
+      display: block;
+    }  
+    .maindiv{
+      display: flex;
+    }
+    .firstdiv{
+      height: 100vh;
+      width: 50vw;
+      background-color: rgb(212, 212, 221);
+      font-size: 7vh;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     
+     
+    }
+    .firstdiv h2{
+      justify-content: center;
+    }
+    .seconddiv{
+      width: 100vh;
+      object-fit: cover;
+
+    }
+@media (max-width: 600px) 
+      {
+      body{
+        background-color: rgb(170, 170, 179);
+      }
+      .logo2{
+        display: none;
+      }
+      .menu{
+        display: block;
+      }
+    } 
+   
+  </style>
+</head>
+<body>
+
+ 
+    <div class="header">
+      <div class="log">
+        <h2>Logo</h2>
+      
+      <div class="logo2" id="menuu">
+        <h2> Home </h2>
+        <h2> Service </h2>
+        <h2> contact</h2>
+        <h2> About</h2>
+      </div>
+      <div class="menu">
+        <h2> Menu</h2>
+        
+        <div class="hower">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </div>
+      </div>
+      </div>
+
+      <div class="maindiv">
+    <div class="firstdiv">
+     <h2> Hello , explore <span>new things </span>  and enjoy it....</h2>
+    </div>
+     <div class="seconddiv">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYJTTXwtUBdoP9fDzmdx8KsjsFYFP9J2mfZA&s" height="100%" width="100%">
+     </div>
+
+      </div>
+
+
+
+    </div>
+  
+  
+</body>
+</html>
