@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+
+    <style>
+        body{
+            background-color: rgb(44, 86, 177);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 5vh; 
+    
+            
+        }
+
+        .container {
+            width: 23rem;
+            height: 28em;
+            background-color: aliceblue;
+            border: 0.5rem solid black; 
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+        }
+        .container img{
+            height: 50%;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 10px;
+
+        }
+       
+       
+    
+
+    </style>
+</head>
+<body>
+
+    <div class=" container">
+       
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIQcaz_645QFMOXaRzoqBPX8dnuxEhHqMuBA&s">
+            <h1>Anjali</h1>
+            <h5> Stranger</h5>
+            <div class="buttons">
+            <button id="Remove"> Remove Friend</button>
+            <button id="add"> Add Friend </button>
+            </div>
+
+            
+         
+
+           
+
+    </div>
+
+    <script>
+        var istatus = document.querySelector("h5");
+        var Addf = document.querySelector("#add");
+        Addf.addEventListener("click",function(){
+            h5.innerHTML = "Friends";
+        })
+        Addf.addEventListener("click",function(){
+            istatus.innerHTML = "Friends";
+        })
+    </script>
+    
+</body>
+</html>
