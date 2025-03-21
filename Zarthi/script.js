@@ -18,7 +18,8 @@ jsonData.map(function(elem){
                     </div>
                     <div class="button-2">
                        Starting from 
-                       &#8377;  ${elem.price}
+                       <span></span>
+                     <span class="price">    &#8377;  ${elem.price}</span>
                     </div>
                 </div>
             </div>`
