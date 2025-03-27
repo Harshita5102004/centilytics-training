@@ -8,7 +8,7 @@ jsonData.map(function(elem){
     console.log(elem)
     str += `<div class="card1">
                 <div class="heading">
-                   <h4>${elem.service_name}</h4> 
+                    <p class="p">${elem.service_name} <p>
                     <p>${ threeLines(elem.service_description)}</p>  </div>
                  <div class="line"> </div>
                 <div class="bottom">
