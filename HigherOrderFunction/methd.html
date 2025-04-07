@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p> hellp</p>
+    <script>
+
+        // map function
+        const arr = [23,4,6,7];
+        const output = arr.map(x => x * 2);
+    //     const output = arr.map( function arr2(x){
+    //     return x*2;
+    //    });
+        console.log(output);
+
+
+
+        
+       // filter  method 
+       const students = [
+    { name: "Alice", score: 85 },
+    { name: "Bob", score: 60 },
+    { name: "Charlie", score: 90 },
+    { name: "David", score: 45 }
+        ];
+
+const passedStudents = students.filter(student => student.score >= 70);
+console.log(passedStudents);
+
+    // reduce method 
+     const sum = [23,,5,7,8];
+     const total = sum.reduce(function sum2(acc,curr){
+        return acc+curr;
+     });
+     console.log(total);
+
+
+    </script>
+</body>
+</html>

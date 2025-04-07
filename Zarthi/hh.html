@@ -1,0 +1,50 @@
+
+let filtered_services_2 = jsonData;
+let service_input_box_2 = document.getElementById('search-filter'); 
+
+const display_service_data_2 = (filtered_services_2) =>
+    {
+        console.log(filtered_services_2);
+        let str2 = filtered_services_2.map(elem2 =>
+
+       ` <div class="card">
+            <div class="left-side">
+                <h2>${elem.service_name}</h2>
+                <p>${elem.service_description}</p>
+                <div class="reviews">
+                    <img src="zarthiassets/Frame (3).svg" alt="">
+                    <h4>100+ Successful Deliveries</h4>
+                    <h4 id="review">12 Reviews</h4>
+                    <img src="zarthiassets/external-link 1.svg" alt="">
+                </div>
+            </div>
+            <div class="right-side">
+                <h3>&#8377; ${elem.price} <span>/ wireframe</span></h3>
+                <h4>Avg. SLA 12hr</h4>
+                <button>Request Service</button>
+            </div>
+        </diV>`).join('');
+        <!-- section_2.innerHTML = str2; -->
+    }
+
+        
+let filter_data_2 = () => {
+    const service_input_text_2 = service_input_box_2.value.toLowerCase();
+   
+    if (service_input_text_2 === "") {
+        // agar input box empty hai , restore the original data
+        filtered_services_2 = jsonData;
+    } else {
+        filtered_services_2 = jsonData.filter((value) =>
+            value.service_name.toLowerCase().includes(service_input_text_2)
+        );
+    }
+ 
+    display_service_data_2(filtered_services_2);
+};
+ 
+ 
+service_input_box_2.addEventListener("input", filter_data_2)
+console.log(filter_data);
+ 
+display_service_data_2(jsonData)
