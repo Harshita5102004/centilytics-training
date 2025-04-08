@@ -31,6 +31,9 @@
 const passedStudents = students.filter(student => student.score >= 70);
 console.log(passedStudents);
 
+
+
+
     // reduce method 
      const sum = [23,,5,7,8];
      const total = sum.reduce(function sum2(acc,curr){
@@ -38,6 +41,22 @@ console.log(passedStudents);
      });
      console.log(total);
 
+
+
+
+
+
+     
+// find method ==>The .find() method returns the first element in an array that satisfies the given condition. If no element is found, it returns undefined.
+const ages = [18, 22, 25, 30];
+const allAdults = ages.find(age => age >= 28);
+console.log(allAdults); 
+
+
+ // EVERY ==>The .every() method checks whether all elements in an array pass a given test. It returns true if all elements satisfy the condition; otherwise, it returns false
+ let array =[2,48,6,78];
+        let output3 = array.every(x => x>+2 );
+       console.log(output3);
 
     </script>
 </body>
